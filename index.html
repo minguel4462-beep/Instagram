@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(
+        45deg,
+        #405DE6,
+        #5851DB,
+        #833AB4,
+        #C13584,
+        #E1306C,
+        #FD1D1D,
+        #FCAF45
+    );
+}
+
+.container{
+    background:white;
+    width:90%;
+    max-width:400px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    margin-bottom:25px;
+    color:#C13584;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#C13584;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#a82e72;
+}
+
+p{
+    margin-top:15px;
+}
+
+a{
+    text-decoration:none;
+    color:#405DE6;
+}
+
+@media (max-width: 500px){
+    .container{
+        width:95%;
+        padding:20px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Login</h1>
+
+    <form>
+        <input type="text" placeholder="Usuário" required>
+
+        <input type="password" placeholder="Senha" required>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+</div>
+
+</body>
+</html>
